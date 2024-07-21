@@ -22,5 +22,6 @@ int main(){
     Node*y = new Node(arr[0]);
     cout<<y<<"\n";
     cout<<y->data<<endl;
+    cout<<y->next<<endl;
     return 0;
 }

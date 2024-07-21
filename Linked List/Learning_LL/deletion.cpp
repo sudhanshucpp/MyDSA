@@ -33,6 +33,7 @@ void printLL(Node* head) {
     cout << "null" << endl;
 }
 
+
 Node* deleteTail(Node* head) {
     if (head == nullptr) {  
         return nullptr;
