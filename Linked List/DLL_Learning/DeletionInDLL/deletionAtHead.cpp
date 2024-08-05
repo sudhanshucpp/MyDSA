@@ -37,15 +37,15 @@ void printLL(Node* head) {
 
 Node* deletionOfHead(Node* head) {
     if (head == nullptr) {
-        return nullptr; // Corrected from '=' to '=='
+        return nullptr; 
     }
 
     Node* back = head;
     head = head->next;
     if (head != nullptr) {
-        head->prev = nullptr; // Set the previous of the new head to nullptr
+        head->prev = nullptr; 
     }
-    back->next = nullptr; // Clear the next pointer of the old head
+    back->next = nullptr; 
     delete back;
     return head;
 }

@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+//creation
+
 class Node {
 public:
     int data;
@@ -17,6 +20,7 @@ public:
     }
 };
 
+//insertion 
 Node* insertionInLL(int data, Node* head) {
     Node* newNode = new Node(data);
     newNode->next = head;
@@ -24,6 +28,8 @@ Node* insertionInLL(int data, Node* head) {
     return head;
 }
 
+
+//print of LL
 void printLL(Node* head) {
     Node* temp = head;
     while (temp != nullptr) {
@@ -33,7 +39,7 @@ void printLL(Node* head) {
     cout << "null" << endl;
 }
 
-
+//deletion --> we should not change the structure of the linked list in question
 Node* deleteTail(Node* head) {
     if (head == nullptr) {  
         return nullptr;
